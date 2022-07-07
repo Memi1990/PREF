@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">shared pref</string>
+    <string name="btn1">Entrar</string>
+    <string name="check">Color de fondo</string>
+    <string name="text">Hola Mundo</string>
+    <string name="btn2">Cerrar Sesión</string>
+</resources>
