@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.sharedpref.SharedPreferences.Companion.prefs
 import com.example.sharedpref.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -13,10 +14,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         b = ActivityMainBinding.inflate(layoutInflater)
         setContentView(b.root)
-        initUi()
+        initUI()
         checkUserValues()
     }
-    fun initUi(){
+    fun initUI(){
         b.btnAccess.setOnClickListener {
             accessSharedPreferences()
         }
